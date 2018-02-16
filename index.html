@@ -2,20 +2,18 @@
 <head>
     
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>
-        
-        
+    <title> 
     In 10 words
     </title>
     
     
     </head>
     <body>
-        
+        <div id="homePage"> 
         <div id="container">
          <h1 id="title">    IN<span style="color: #61a19a">10 </span> WORDS</h1>
         <h3 id="subtitle"> Describe Your Worst University Sstory </h3>
-          <a href="post.html">    <button class="storyOptions"> POST YOUR STORY </button> </a>
+        <button class="storyOptions" id="openPage"> POST YOUR STORY </button> 
       <button class="storyOptions"> READ STORIES </button>
     </div>
         
@@ -23,6 +21,38 @@
         <div id="quote1"> <img src="Quote2.png" id="quotation"/> </div>
         <div id="quote2"> <img src="Quote1.png" id="quotation2"/> </div>
     </div>    
+        
+        <div id="stories"> 
+        <div id="userStory">  </div>
+        
+        </div>
+            
+        </div>
+        
+        
+        <div id="postPage">
+                <div id="container1">
+            <h1 id="title1"> POST YOUR STORY </h1>
+            <h3 id="subtitle2"> <span style="color: #61a19a">10 </span> WORD LIMIT </h3>
+            
+
+         
+                    <div id='inside'>
+                        <div id="quotes"> <img src="Quote2.png" id="quotations" /> </div>
+                        <div id="quotes2"> <img src="Quote1.png" id="quotations2" ;/> </div>
+                        <input type="text" value="" placeholder="Type Story Here.." id="storyInput" />
+                    </div>
+            
+
+
+            <div id="container3">
+            <input type="text" value="" placeholder="ENTER NAME HERE" id="username"/>
+                <button id="post" onclick="publish()"> PUBLISH STORY </button>
+            </div>
+      </div>
+  </div>
+
+
         
   <script src="myscript.js"> </script>
     
