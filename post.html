@@ -4,225 +4,18 @@
     <title>
         In 10 words
     </title>
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Roboto:700');
-        body {
-            background-color: #bcdbdb;
-        }
-        
-        #container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            width: 100vw;
-        }
-        
-
-        
-        #inside {
-            position: relative;
-            margin-top: -5vw;
-            width: 60vw;
-            height: 30vw;
-            border: 5px solid white;
-        }
-        
-        #title {
-            color: white;
-            font-size: 50pt;
-            font-family: "Roboto";
-            letter-spacing: 8px;
-            width: 100vw;
-            text-align: center;
-            line-height: .8em;
-        }
-        
-        #subtitle {
-            font-family: "Roboto";
-            letter-spacing: 3px;
-            color: white;
-            width: 400px;
-            font-size: 25pt;
-            text-align: center;
-            position: relative;
-            bottom: 75px;
-        }
-        
-        #wrapper {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        
-   
-        #quote1{
-            position: absolute;
-            left: -5rem;
-            top: -5rem;
-            background-color: #bcdbdb;
-            padding: 2vw;
-        }
-        
-        #quote2 {
-            position: absolute;
-            right: -5rem;
-            bottom: -5rem;
-            background-color: #bcdbdb;
-            padding: 2vw;
-        }
-        
-    #quotation,
-        #quotation2 {
-            width: 8vw;
-        }
-        
-        #container2 {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100vw;
-        }
-        
-
-        
-        #storyInput {
-            width: 500px;
-            font-family: "Roboto";
-           font-size: 2.5vw;
-            color: white;
-            background: transparent;
-            border: none;
-            padding-left: 7rem;
-            padding-top: 2rem;
-        }
-        
-      
-        
-        #container3 {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            margin: 2vw;
-            
-            
-        }
-        
-        #name {
-            
-            background: white;
-            width: 40vw;
-            height: 3vw;
-            font-family: "Roboto";
-           font-size: 2.5vw;
-            color: #61a19a;
-            border-style: none;
-            margin-bottom: 1vw;
-            
-        }
-        
-        #post {
-            background: white;
-            width: 40vw;
-            height: 4vw;
-            font-size: 2.5vw;
-            font-family: "Roboto";
-            color: #61a19a;
-            border-style: none;
-            
-            
-        }
-        
-        /* MEDIA QUERIES !!!! */
-        
-@media (min-width: 768px) and (max-width: 1024px) {
-  
-     #quote1{
-            position: absolute;
-            left: -3rem;
-            top: -3rem;
-            
-        }
-        
-        #quote2 {
-            position: absolute;
-            right: -3rem;
-            bottom: -3rem;
-            
-        }
-   
-  
-}
-        
-        @media (min-width: 481px) and (max-width: 767px) {
-  
-                #quote1{
-            position: absolute;
-            left: -2.5rem;
-            top: -2.5rem;
-            
-        }
-        
-        #quote2 {
-            position: absolute;
-            right: -2.5rem;
-            bottom: -2.5rem;
-            
-        }
-            
-                       #inside {
-            margin-top: -2vw;
-            width: 75vw;
-            height: 35vw;
-                
-        }
-
-            
-}
-        
-        @media (min-width: 320px) and (max-width: 480px) {
-                
-                #quote1{
-            position: absolute;
-            left: -1.5rem;
-            top: -1.5rem;
-            
-        }
-        
-        #quote2 {
-            position: absolute;
-            right: -1.5rem;
-            bottom: -1.5rem;
-            
-        }
-
-            
-            #inside {
-            margin-top: -2vw;
-            width: 75vw;
-            height: 40vw;
-                
-        }
-            
-            
-            
-}
-
-
-    </style>
-
+    <link rel="stylesheet" type="text/css" href="style.css">
     <body>
 
-        <div id="container">
-            <h1 id="title"> POST YOUR STORY </h1>
-            <h3 id="subtitle"> <span style="color: #61a19a">10 </span> WORD LIMIT </h3>
+        <div id="container1">
+            <h1 id="title1"> POST YOUR STORY </h1>
+            <h3 id="subtitle2"> <span style="color: #61a19a">10 </span> WORD LIMIT </h3>
             
 
          
                     <div id='inside'>
-                        <div id="quote1"> <img src="Quote2.png" id="quotation" /> </div>
-                        <div id="quote2"> <img src="Quote1.png" id="quotation2" ;/> </div>
+                        <div id="quotes"> <img src="Quote2.png" id="quotations" /> </div>
+                        <div id="quotes2"> <img src="Quote1.png" id="quotations2" ;/> </div>
                         <input type="text" value="" placeholder="Type Story Here.." id="storyInput" />
                     </div>
             
@@ -236,6 +29,7 @@
   </div>
 
 
+        <script src="myscript.js"> </script>
     </body>
 </head>
 

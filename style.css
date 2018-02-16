@@ -1,0 +1,283 @@
+        @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+        
+        
+        body {
+            background-color: #bcdbdb;
+            
+        }
+
+        /* HOMEPAGE */
+
+
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width: 100vw;
+            height: 100vh;
+            
+            
+        }
+        
+        #title {
+            color: white;
+            font-size: 80pt;
+            font-family: "Roboto";
+            letter-spacing: 8px;
+            width: 400px;
+            text-align: center;
+            line-height: .8em;
+        }
+        
+        #subtitle {
+           
+            font-family: "Roboto";
+            letter-spacing: 3px;
+            color: #61a19a;
+            width: 400px;
+            font-size: 25pt;
+            text-align: center;
+            position: relative;
+            bottom: 75px;
+            
+        }
+        
+        #wrapper {
+        display: flex;
+        flex-wrap: wrap;
+            
+            
+        }
+        
+        #quotation {
+        width: 380px;
+        height: 380px;
+        position:fixed;
+        top:0;
+        left:-20;
+        }
+        
+        #quotation2 {
+        width: 380px;
+        height: 380px;
+       position:fixed;
+        bottom:0;
+        right:-20;
+        }
+        
+        .storyOptions {
+            border: 3px solid white;
+            width: 300px;
+            background: none;
+            height: 60px;
+            margin: 3px;
+            font-family: "Roboto";
+            color: white;
+            letter-spacing: 3px;
+            font-size: 16pt;
+        }
+
+
+/* POST PAGE */
+
+ #container1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width: 100vw;
+        }
+        
+
+        
+        #inside {
+            position: relative;
+            margin-top: -5vw;
+            width: 60vw;
+            height: 30vw;
+            border: 5px solid white;
+        }
+        
+        #title1 {
+            color: white;
+            font-size: 50pt;
+            font-family: "Roboto";
+            letter-spacing: 8px;
+            width: 100vw;
+            text-align: center;
+            line-height: .8em;
+        }
+        
+        #subtitle2 {
+            font-family: "Roboto";
+            letter-spacing: 3px;
+            color: white;
+            width: 400px;
+            font-size: 25pt;
+            text-align: center;
+            position: relative;
+            bottom: 75px;
+        }
+        
+        #wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+   
+        #quotes{
+            position: absolute;
+            left: -5rem;
+            top: -5rem;
+            background-color: #bcdbdb;
+            padding: 2vw;
+        }
+        
+        #quotes2 {
+            position: absolute;
+            right: -5rem;
+            bottom: -5rem;
+            background-color: #bcdbdb;
+            padding: 2vw;
+        }
+        
+    #quotations,
+        #quotations2 {
+            width: 8vw;
+        }
+        
+        #container2 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+        }
+        
+
+        
+        #storyInput {
+            width: 500px;
+            font-family: "Roboto";
+           font-size: 2.5vw;
+            color: white;
+            background: transparent;
+            border: none;
+            padding-left: 7rem;
+            padding-top: 2rem;
+        }
+        
+      
+        
+        #container3 {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin: 2vw;
+            
+            
+        }
+        
+        #name {
+            
+            background: white;
+            width: 40vw;
+            height: 3vw;
+            font-family: "Roboto";
+           font-size: 2.5vw;
+            color: #61a19a;
+            border-style: none;
+            margin-bottom: 1vw;
+            
+        }
+        
+        #post {
+            background: white;
+            width: 40vw;
+            height: 4vw;
+            font-size: 2.5vw;
+            font-family: "Roboto";
+            color: #61a19a;
+            border-style: none;
+            
+            
+        }
+        
+        /* MEDIA QUERIES !!!! */
+        
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+     #quotes{
+            position: absolute;
+            left: -3rem;
+            top: -3rem;
+            
+        }
+        
+        #quotes2 {
+            position: absolute;
+            right: -3rem;
+            bottom: -3rem;
+            
+        }
+   
+  
+}
+        
+        @media (min-width: 481px) and (max-width: 767px) {
+  
+                #quotes{
+            position: absolute;
+            left: -2.5rem;
+            top: -2.5rem;
+            
+        }
+        
+        #quotes2 {
+            position: absolute;
+            right: -2.5rem;
+            bottom: -2.5rem;
+            
+        }
+            
+                       #inside {
+            margin-top: -2vw;
+            width: 75vw;
+            height: 35vw;
+                
+        }
+
+            
+}
+        
+        @media (min-width: 320px) and (max-width: 480px) {
+                
+                #quotes{
+            position: absolute;
+            left: -1.5rem;
+            top: -1.5rem;
+            
+        }
+        
+        #quotes2 {
+            position: absolute;
+            right: -1.5rem;
+            bottom: -1.5rem;
+            
+        }
+
+            
+            #inside {
+            margin-top: -2vw;
+            width: 75vw;
+            height: 40vw;
+                
+        }
+            
+            
+            
+}
