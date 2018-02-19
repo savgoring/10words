@@ -9,7 +9,11 @@ var post = document.getElementById("post");
 
 
 
+
+
+
 openPage.addEventListener("click", function(){
+    console.log("Hi");
     postPage.style.display="block";
     homePage.style.display="none";
     
@@ -22,7 +26,31 @@ function publish(){
     postPage.style.display="none";
     homePage.style.display="block";
     
-} 
+}; 
+
+
+function addToDB(){
+    var xmlhttp =  "http://localhost:8888/10words/insert.php?&uname="+username.value + "&ustory=" + story.value;
+    
+    xmlhttp.onreadystatechange = () => {
+        if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+  
+            
+        };
+        
+        
+    };
+    
+    xmlhttp.open("GET", request, true);
+    xmlhttp.send();
+    
+    
+};
+
+
+
+
+
     
 //10 word limit function
 
@@ -51,6 +79,8 @@ $(document).ready(function(){
         });
     });
 });
+
+
 
 
 
