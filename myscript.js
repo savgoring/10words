@@ -30,7 +30,8 @@ function publish(){
 
 
 function addToDB(){
-    var xmlhttp =  "http://localhost:8888/10words/insert.php?&uname="+username.value + "&ustory=" + story.value;
+    var xmlhttp = new XMLHttpRequest(),
+        request = "http://localhost:8888/10words/insert.php?&uname="+username.value + "&ustory=" + story.value;
     
     xmlhttp.onreadystatechange = () => {
         if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
