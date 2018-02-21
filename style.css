@@ -45,16 +45,14 @@
         }
         
         #quotation {
-            width: 380px;
-            height: 380px;
+            width: 24vw;
             position: fixed;
             top: 0;
             left: -20;
         }
         
         #quotation2 {
-            width: 380px;
-            height: 380px;
+            width: 24vw;
             position: fixed;
             bottom: 0;
             right: -20;
@@ -245,6 +243,22 @@
                 right: -3rem;
                 bottom: -3rem;
             }
+            
+            
+            
+            #quotation {
+                width: 22vw;
+                
+                
+            }
+            
+            
+            #quotation2 {
+                width: 22vw;
+                
+                
+            }
+            
         }
         
         @media (min-width: 481px) and (max-width: 767px) {
@@ -263,6 +277,20 @@
                 width: 75vw;
                 height: 35vw;
             }
+            
+              #quotation {
+                width: 18vw;
+        
+            }
+            
+            
+            #quotation2 {
+                width: 18vw;
+       
+            }
+            
+            
+            
         }
         
         @media (min-width: 320px) and (max-width: 480px) {
