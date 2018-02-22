@@ -6,8 +6,9 @@ var postPage = document.getElementById("postPage");
 var homePage = document.getElementById("homePage");
 var story = document.getElementById("storyInput");
 var post = document.getElementById("post");
+var storyBox = document.getElementById("stories");
 
-
+var storyArr = [];
 
 
 
@@ -20,13 +21,49 @@ openPage.addEventListener("click", function(){
  
 });
     
-function publish(){
-    userStory.style.display="block";
-    userStory.innerHTML =  username.value + story.value;
-    postPage.style.display="none";
-    homePage.style.display="block";
-    
-}; 
+
+
+
+
+
+
+
+
+ post.addEventListener("click", function(){
+     console.log("post");
+ 
+          
+
+     if (story.value == "") {
+		alert("Your story is blank!");
+	}
+     
+     else {
+         
+        postPage.style.display="none";
+        homePage.style.display="block";
+        userStory.style.display="block";
+         
+        var storeitem = document.createElement("div");
+        storeitem.id = 'storeitem_id';
+        storeitem.innerHTML = username.value + "<br> <br> <br>" + story.value;
+		userStory.appendChild(storeitem);   
+         
+     }
+     
+
+        for (var i = 0; i < storyArr.length; i++) {
+		
+		storyBox.innerHTML = storyArr[i];
+	}
+     
+       
+
+});   
+     
+     
+     
+  
 
 
 function addToDB(){
