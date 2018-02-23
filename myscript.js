@@ -20,12 +20,6 @@ openPage.addEventListener("click", function(){
     
  
 });
-    
-
-
-
-
-
 
 
 
@@ -68,7 +62,7 @@ openPage.addEventListener("click", function(){
 
 function addToDB(){
     var xmlhttp = new XMLHttpRequest(),
-        request = "http://localhost:8888/10words/insert.php?&uname="+username.value + "&ustory=" + story.value;
+        request = "http://savannagoring.com/in10words/insert.php?&sNum="+username.value + "&sDesc=" + story.value;
     
     xmlhttp.onreadystatechange = () => {
         if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
